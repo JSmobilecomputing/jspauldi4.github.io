@@ -1,0 +1,611 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+		<title>Assignment 1</title> 
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		
+		<!--<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />-->
+		<link rel="stylesheet" href="jquery-mobile-theme-191124-0/themes/theme1.min.css" />
+		<link rel="stylesheet" href="jquery-mobile-theme-191124-0/themes/jquery.mobile.icons.min.css" />
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+
+		
+	  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>"http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+	</head> 
+	<body>
+
+	<!-- Home Page -->
+	<section id="Home" data-role="page">
+	<header data-role="header"><h1>Jake's Restaurant </h1><h2>Home</h2></header>
+			<div data-role="navbar">
+			<ul data-role="listview" align="center">
+				<li><a href="Assignment 1#Home" data-transition="slidefade"  data-icon="home" >Home</a></li>
+				<li><a href="Assignment 1#page2" data-transition="slidefade" data-icon="bars" >Menu</a></li>
+				<li><a href="Assignment 1#page4" data-transition="slidefade"  data-icon="grid" >Contact Us</a></li>
+				<li><a href="Assignment 1#page3" data-transition="slidefade"  data-icon="heart" >Feedback</a></li>
+				<li><a href="about.html" data-transition="slidefade"  data-icon="action" >About Me</a></li>
+				
+		</div>
+		<div align="center">
+		<h3>Restaurant of the Jake</h3>
+		<p> This is a fancy establishment with delicious food and over priced drinks</P>
+		<img src="restaurant.png" width="20%" height="35%" class="ui-li-icon" >
+		</div>
+		
+		
+		
+		<!--<a href="#reservation" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Show</a>-->
+		
+		<!--Make a Reservation
+		<div data-role="popup" id="reservation">
+			<p>testing my popup</p>
+		
+		
+		</div>-->
+		
+		<div align="center">
+			<a href="#reservation" class="ui-btn ui-btn-inline ui-corner-all">Make a Reservation</a>
+		
+		</div>
+		
+		
+		
+		
+		<!-- Collapsible List -->
+		<div data-role="collapsible">
+			<h1 align="center">We are located at these Locations</h1>
+			<p align="center">Narre Warren, 123 Fake Street</p>
+			<p align="center">Burwood, 666 That Road</p>
+			<p align="center">Melbourne, 1077 Nowhere Highway</p>
+		</div>
+		
+		
+		<footer data-role="footer"><h1>Created by Jake Spaulding</h1></footer>
+	</section>
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<!-- Menu Page -->	
+	<section id="page2" data-role="page">
+		<header data-role="header"><h1>Jake's Restaurant </h1><h2>Menu</h2></header>
+		<div data-role="navbar">
+			<ul data-role="listview" text-align: center;>
+				<li><a href="Assignment 1#Home" data-transition="slidefade"  data-icon="home" >Home</a></li>
+				<li><a href="Assignment 1#page2" data-transition="slidefade" data-icon="bars" >Menu</a></li>
+				<li><a href="Assignment 1#page4" data-transition="slidefade"  data-icon="grid" >Contact Us</a></li>
+				<li><a href="Assignment 1#page3" data-transition="slidefade"  data-icon="heart" >Feedback</a></li>
+				<li><a href="about.html" data-transition="slidefade"  data-icon="action" >About Me</a></li>
+				
+		</div>
+			<div data-role="content" class="content">
+				<p align="center">Welcome to Jake's Super Amazing Restaurant</p>
+				
+			</div>
+			
+				<!-- Menu List -->
+				<h3>Menu</h3>
+				<ul data-role="listview">
+					<li data-role="divider"><h4>Chicken</h4></li>							
+					<li><a href="#item1">Chicken Scallopine</a></li>
+					<li><a href="#item2">Chicken Schnitzel</a></li>	
+					<li data-role="divider">Steak</li>
+					<li><a href="#item3">Rib-eye Steak</a></li>
+					<li><a href="#item4">Porterhouse Steak</a></li>			
+					<li data-role="divider">Pasta</li>
+					<li><a href="#item5">Spaghetti</a></li>
+					<li><a href="#item6">Risotto</a></li>
+					
+					
+				</ul>
+				
+				
+				
+				
+				
+			</div>
+		<footer data-role="footer"><h1>Created by Jake Spaulding</h1></footer>
+	</section>
+		
+		<!--Feedback Page-->
+	<section id="page3" data-role="page">
+		<header data-role="header"><h1>Jake's Restaurant </h1><h2>Contact Us</h2></header>
+		<div data-role="navbar">
+			<ul data-role="listview" align="center">
+				<li><a href="Assignment 1#Home" data-transition="slidefade"  data-icon="home" >Home</a></li>
+				<li><a href="Assignment 1#page2" data-transition="slidefade" data-icon="bars" >Menu</a></li>
+				<li><a href="Assignment 1#page4" data-transition="slidefade"  data-icon="grid" >Contact Us</a></li>
+				<li><a href="Assignment 1#page3" data-transition="slidefade"  data-icon="heart" >Feedback</a></li>
+				<li><a href="about.html" data-transition="slidefade"  data-icon="action" >About Me</a></li>
+				
+		</div>
+		<div>
+		<!--Customer Information-->
+		<label for="customer">Please Enter Your Name and Contact Information</label>
+		<textarea name="customername" id="name" placeholder="Insert Name"></textarea>
+		<textarea name="customernumber" id="number" placeholder="Insert Phone Number"></textarea>
+		<textarea name="customeremail" id="email" placeholder="Insert Email Address"></textarea>
+		
+		
+		</div>		
+		<div>
+			<form>
+			<!-- Feedback Form -->
+				<label for="review">Feedback</label>
+				<textarea name="test" id="review" placeholder="Review this Restaurant"></textarea>
+				<label for="Rate"> Rate the Restaurant</label>
+				<!-- Rating Bar -->
+				<input type="range" value="5" min="0" max="10" name="Rate" id="Rate"/>
+				<!--<label for="Submit"> Submit</label>-->
+				<input type="submit" name="Submit" id="Submit" value="Go Back"/>
+			
+			</form>
+			
+			
+		
+		<!--</div>
+			<div>
+			<script type='text/javascript'>
+				function appendText()
+				{
+				var txt1 = $("<p></p>").text"text.");
+				
+				}
+			
+			</script>
+		</div>-->
+		
+			<!--Enhanced Feature: Using Javascript I was able to improve upon the Feedback System
+			By allowing users to post comments, then saving those comments on the web app for
+			other Users to see!-->
+			<button id="btn1">Submit Feedback</button>
+		<div>
+		
+			<script type='text/javascript'>
+			<!--$(document).ready(function(){-->
+							
+				var text2 = "hello";
+				$("#btn1").click(function(){
+				var name = $('textarea#name').val();
+				var review = $('textarea#review').val();
+				var rating = $('input#Rate').val();
+				 $("#feedback ul").append('<li>' + name + '</li>' + '<li>' +  review + '</li>' + 
+				 '<li>' +  rating + ' out of 10 Stars' + '</li>' + '<li>' + '------------------------' + '</li>');
+				
+				});
+			<!--});-->
+			</script>
+			
+			
+		<div id="feedback" >
+			<h1 align="center">Comments</h1>
+			<ul data-role="listview" align="center" >
+				<!--<li align="center">Testing</li>
+				<li align="center" data-role="listview">Testing 2</li>
+			<li align="center"><script type='text/javascript'>text1</script></li>-->
+			</ul>
+		</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</div>
+		<footer data-role="footer"><h1>Created by Jake Spaulding</h1></footer>
+		
+	</section>
+	
+	
+				<!--This page contains the Restaurants Contact Details-->
+				<!--Developer Detail listed in the About Us page-->
+	<section id="page4" data-role="page">
+		<header data-role="header"><h1>Jake's Restaurant </h1><h2>Contact Us</h2></header>
+			<div data-role="navbar">
+			<ul data-role="listview" align="center">
+				<li><a href="Assignment 1#Home" data-transition="slidefade"  data-icon="home" >Home</a></li>
+				<li><a href="Assignment 1#page2" data-transition="slidefade" data-icon="bars" >Menu</a></li>
+				<li><a href="Assignment 1#page4" data-transition="slidefade"  data-icon="grid" >Contact Us</a></li>
+				<li><a href="Assignment 1#page3" data-transition="slidefade"  data-icon="heart" >Feedback</a></li>
+				<li><a href="about.html" data-transition="slidefade"  data-icon="action" >About Me</a></li>
+				
+			</div>
+			<!-- Contact Details of each Store-->
+			<div data-role="main" align="center" >
+				<h3>Narre Warren Restaurant Contact Details </h3>
+				<p>Phone Number: 04 1234 9876</p>
+				<p>Email Address: nw@jakesrestaurant.com.au</p>
+						
+				<h3>Burwood Restaurant Contact Details </h3>
+				<p>Phone Number: 04 5678 3489</p>
+				<p>Email Address: bw@jakesrestaurant.com.au</p>
+				
+				<h3>Melbourne Restaurant Contact Details </h3>
+				<p>Phone Number: 04 0022 1144</p>
+				<p>Email Address: mel@jakesrestaurant.com.au</p>
+			
+			</div>
+			
+			
+			<div align="center">
+				
+				<label for="post"><h3>You can also post a message below for us to see</h3></label>
+				<textarea name="post" id="post" placeholder="Post a Message Here:"></textarea>
+				<input type="submit" name="Send" id="send" value="Send"/>
+			</div>
+			
+			
+	</section>			
+			
+			
+			
+	
+	<!-- Below are the pages for the Food of the Restaurant
+	<!-- Detailed Information of a Product -->
+	<section id="item1" data-role="page" data-theme="a">
+		<header data-role="header"><h1>Jake's Restaurant </h1><h2>Chicken Scallopine</h2></header>
+		<div data-role="navbar" >
+			<ul data-role="listview" align="center">
+				<li><a href="Assignment 1#Home" data-transition="slidefade"  data-icon="home" >Home</a></li>
+				<li><a href="Assignment 1#page2" data-transition="slidefade" data-icon="bars" >Menu</a></li>
+				<li><a href="Assignment 1#page4" data-transition="slidefade"  data-icon="grid" >Contact Us</a></li>
+				<li><a href="Assignment 1#page3" data-transition="slidefade"  data-icon="heart" >Feedback</a></li>
+				<li><a href="about.html" data-transition="slidefade"  data-icon="action" >About Me</a></li>
+			</ul>
+		</div>	
+		<div data-role="main" align="center">
+			<h2>Chicken Scallopine</h2>
+			<p>Chicken with Mushrooms</p>
+			<img src="scallopine.png" width="10%" height="25%" class="ui-li-icon" >
+			
+				
+		
+		<p>Chicken, Mushrooms, Herbs, Mushroom Sauce</p>
+		<p>$27.99</p>
+		<ul data-role="listview" data-inset="true">
+			<a href="#page2" class="ui-btn" data-icon="arrow-l" data-transition="slidefade" >Back</a>
+		</ul>
+		</div>
+		
+		
+		
+	</section>
+	
+	
+	
+			
+			<!-- Detailed Information of a Product: Chicken Schnitzel -->
+	<section id="item2" data-role="page" data-theme="a">
+		<header data-role="header"><h1>Jake's Restaurant </h1><h2>Chicken Schnitzel</h2></header>
+		<div data-role="navbar" >
+			<ul data-role="listview" align="center">
+				<li><a href="Assignment 1#Home" data-transition="slidefade"  data-icon="home" >Home</a></li>
+				<li><a href="Assignment 1#page2" data-transition="slidefade" data-icon="bars" >Menu</a></li>
+				<li><a href="Assignment 1#page4" data-transition="slidefade"  data-icon="grid" >Contact Us</a></li>
+				<li><a href="Assignment 1#page3" data-transition="slidefade"  data-icon="heart" >Feedback</a></li>
+				<li><a href="about.html" data-transition="slidefade"  data-icon="action" >About Me</a></li>
+			</ul>
+		</div>	
+		<div data-role="main" align="center">
+			<h2>Chicken Schnitzel</h2>
+			<p>Beer Battered Chicken</p>
+			<img src="schnitzel.png" width="10%" height="25%" class="ui-li-icon" >
+			
+				
+		
+		<p>Chicken, Chips, Sauce</p>
+		<p>$24.99</p>
+		<ul data-role="listview" data-inset="true">
+			<a href="#page2" class="ui-btn" data-icon="arrow-l" data-transition="slidefade" >Back</a>
+		</ul>
+		</div>
+		
+		
+		
+	</section>
+			
+			
+			
+			
+			<!-- Detailed Information of a Product -->
+	<section id="item3" data-role="page" data-theme="a">
+		<header data-role="header"><h1>Jake's Restaurant </h1><h2>Rib-Eye Steak</h2></header>
+		<div data-role="navbar" >
+			<ul data-role="listview" align="center">
+				<li><a href="Assignment 1#Home" data-transition="slidefade"  data-icon="home" >Home</a></li>
+				<li><a href="Assignment 1#page2" data-transition="slidefade" data-icon="bars" >Menu</a></li>
+				<li><a href="Assignment 1#page4" data-transition="slidefade"  data-icon="grid" >Contact Us</a></li>
+				<li><a href="Assignment 1#page3" data-transition="slidefade"  data-icon="heart" >Feedback</a></li>
+				<li><a href="about.html" data-transition="slidefade"  data-icon="action" >About Me</a></li>
+			</ul>
+		</div>	
+		<div data-role="main" align="center">
+			<h2>Rib-Eye Steak</h2>
+			<p>Steak with Mushrooms</p>
+			<img src="ribeye.png" width="10%" height="25%" class="ui-li-icon" >
+			
+				
+		
+		<p>600 grams Rib-Eye Steak, Choice of Sauce</p>
+		<p>$34.99</p>
+		<ul data-role="listview" data-inset="true">
+			<a href="#page2" class="ui-btn" data-icon="arrow-l" data-transition="slidefade" >Back</a>
+		</ul>
+		</div>
+	</section>
+			
+			<!-- Detailed Information of a Product -->
+	<section id="item4" data-role="page" data-theme="a">
+		<header data-role="header"><h1>Jake's Restaurant </h1><h2>Porterhouse Steak</h2></header>
+		<div data-role="navbar" >
+			<ul data-role="listview" align="center">
+				<li><a href="Assignment 1#Home" data-transition="slidefade"  data-icon="home" >Home</a></li>
+				<li><a href="Assignment 1#page2" data-transition="slidefade" data-icon="bars" >Menu</a></li>
+				<li><a href="Assignment 1#page4" data-transition="slidefade"  data-icon="grid" >Contact Us</a></li>
+				<li><a href="Assignment 1#page3" data-transition="slidefade"  data-icon="heart" >Feedback</a></li>
+				<li><a href="about.html" data-transition="slidefade"  data-icon="action" >About Me</a></li>
+			</ul>
+		</div>	
+		<div data-role="main" align="center">
+			<h2>Porterhouse Steak</h2>
+			<p>Large Beef Steak, Choice of Sauce</p>
+			<img src="steak.png" width="10%" height="25%" class="ui-li-icon" >
+			
+				
+		
+		<p>1 kilo Porterhouse Steak</p>
+		<p>$39.99</p>
+		<ul data-role="listview" data-inset="true">
+			<a href="#page2" class="ui-btn" data-icon="arrow-l" data-transition="slidefade" >Back</a>
+		</ul>
+		</div>
+	</section>
+			
+			
+			
+	<!-- Detailed Information of a Product -->
+	<section id="item5" data-role="page" data-theme="a">
+		<header data-role="header"><h1>Jake's Restaurant </h1><h2>Spaghetti</h2></header>
+		<div data-role="navbar" >
+			<ul data-role="listview" align="center">
+				<li><a href="Assignment 1#Home" data-transition="slidefade"  data-icon="home" >Home</a></li>
+				<li><a href="Assignment 1#page2" data-transition="slidefade" data-icon="bars" >Menu</a></li>
+				<li><a href="Assignment 1#page4" data-transition="slidefade"  data-icon="grid" >Contact Us</a></li>
+				<li><a href="Assignment 1#page3" data-transition="slidefade"  data-icon="heart" >Feedback</a></li>
+				<li><a href="about.html" data-transition="slidefade"  data-icon="action" >About Me</a></li>
+			</ul>
+		</div>	
+		<div data-role="main" align="center">
+			<h2>Spaghetti</h2>
+			<p>Fresh Spaghetti and Meatballs</p>
+			<img src="spag.png" width="10%" height="25%" class="ui-li-icon" >
+			
+				
+		
+		<p>Spaghetti, Tomato Sauce, Mince Meat, Meatballs</p>
+		<p>$21.99</p>
+		<ul data-role="listview" data-inset="true">
+			<a href="#page2" class="ui-btn" data-icon="arrow-l" data-transition="slidefade" >Back</a>
+		</ul>
+		</div>
+	</section>
+				
+		<!-- Detailed Information of a Product -->
+	<section id="item6" data-role="page" data-theme="a">
+		<header data-role="header"><h1>Jake's Restaurant </h1><h2>Risotto</h2></header>
+		<div data-role="navbar" >
+			<ul data-role="listview" align="center">
+				<li><a href="Assignment 1#Home" data-transition="slidefade"  data-icon="home" >Home</a></li>
+				<li><a href="Assignment 1#page2" data-transition="slidefade" data-icon="bars" >Menu</a></li>
+				<li><a href="Assignment 1#page4" data-transition="slidefade"  data-icon="grid" >Contact Us</a></li>
+				<li><a href="Assignment 1#page3" data-transition="slidefade"  data-icon="heart" >Feedback</a></li>
+				<li><a href="about.html" data-transition="slidefade"  data-icon="action" >About Me</a></li>
+			</ul>
+		</div>	
+		<div data-role="main" align="center">
+			<h2>Risotto</h2>
+			<p>Vegetable Risotto</p>
+			<img src="risotto.png" width="10%" height="25%" class="ui-li-icon" >
+			
+				
+		
+		<p>Potatoes, Broccoli, Parmesan Cheese</p>
+		<p>$25.99</p>
+		<ul data-role="listview" data-inset="true">
+			<a href="#page2" class="ui-btn" data-icon="arrow-l" data-transition="slidefade" >Back</a>
+		</ul>
+		</div>
+	</section>	
+
+			
+			
+	<section id="reservation" data-role="page">
+	<header data-role="header"><h1>Jake's Restaurant </h1><h2>Make a Reservation</h2></header>
+			<div data-role="navbar">
+			<ul data-role="listview" align="center">
+				<li><a href="Assignment 1#Home" data-transition="slidefade"  data-icon="home" >Home</a></li>
+				<li><a href="Assignment 1#page2" data-transition="slidefade" data-icon="bars" >Menu</a></li>
+				<li><a href="Assignment 1#page4" data-transition="slidefade"  data-icon="grid" >Contact Us</a></li>
+				<li><a href="Assignment 1#page3" data-transition="slidefade"  data-icon="heart" >Feedback</a></li>
+				<li><a href="about.html" data-transition="slidefade"  data-icon="action" >About Me</a></li>
+				
+		</div>
+			<!--Below are random Phone numbers i came up with, Please don't actually call them as I don't want to annoy random people
+				You can test them up to the point where it asks for a program to call with i.e. Skype-->
+		<div align="center">	
+			<a href="tel:04 1234 9875" class="ui-btn ui-btn-inline ui-corner-all">Narre Warren: 04 1234 9875</a>
+		</div>
+		
+		
+		
+		<div align="center">
+			<label for="review">What Name would you like the Reservation under?</label>
+			<textarea name="undername" id="undername" placeholder="What Name would you like your Reservation Under?"></textarea>
+			<label for="numberpeople"> How Many People?</label>
+			<input type="range" value="5" min="0" max="10" name="numberpeople" id="numberpeople"/>
+			<label for="time"> What Time?</label>
+			<input type="range" value="6" min="6" max="12" name="time" id="time"/>
+			
+			
+			<!-- this is a continuation of Enhanced Feature, by using the same type of code
+			i am able to make by  Reservation show the input data in a pop window when the
+			user is finished-->
+			<!--Make a Reservation-->
+			<a  id="button2" href="#finish" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Submit Reservation</a>
+			<div>
+			<script type='text/javascript'>
+			
+							
+				<!--This code will get the information entered by the User and-->
+				<!--display it when the have finished-->
+				var text2 = "hello";
+				
+				$("#button2").click(function(){
+				var Rname = $('textarea#undername').val();
+				var Rpeople = $('input#numberpeople').val();
+				var Rtime = $('input#time').val();
+				 $("#finish p").append('Reservation under the name ' + Rname + 
+				 ' for ' + Rpeople + ' people ' + ' at ' + Rtime + ':00pm' );
+				
+				});
+			
+			</script>
+			<div data-role="popup" id="finish">
+				
+				<p></p>
+			</div>
+			</div>
+			
+		</div>
+		
+		
+		
+		
+		
+		<div align="center">	
+			<a href="tel:04 5678 3489" class="ui-btn ui-btn-inline ui-corner-all">Burwood: 04 5678 3489</a>
+		</div>
+		
+		<div align="center">
+			<label for="review">What Name would you like the Reservation under?</label>
+			<textarea name="undername" id="undername" placeholder="What Name would you like your Reservation Under?"></textarea>
+			<label for="numberpeople"> How Many People?</label>
+			<input type="range" value="5" min="0" max="10" name="numberpeople" id="numberpeople"/>
+			<label for="time"> What Time?</label>
+			<input type="range" value="6" min="6" max="12" name="time" id="time"/>
+			
+			
+			<!-- this is a continuation of Enhanced Feature, by using the same type of code
+			i am able to make by  Reservation show the input data in a pop window when the
+			user is finished-->
+			<!--Make a Reservation-->
+			<a  id="button2" href="#finish" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Submit Reservation</a>
+			<div>
+			<script type='text/javascript'>
+			
+							
+				<!--This code will get the information entered by the User and-->
+				<!--display it when the have finished-->
+				var text2 = "hello";
+				
+				$("#button2").click(function(){
+				var Rname = $('textarea#undername').val();
+				var Rpeople = $('input#numberpeople').val();
+				var Rtime = $('input#time').val();
+				 $("#finish p").append('Reservation under the name ' + Rname + 
+				 ' for ' + Rpeople + ' people ' + ' at ' + Rtime + ':00pm' );
+				
+				});
+			
+			</script>
+			<div data-role="popup" id="finish">
+				
+				<p></p>
+			</div>
+			</div>
+			
+		</div>
+		
+		<div align="center">	
+			<a href="tel:04 0022 1144" class="ui-btn ui-btn-inline ui-corner-all">Melbourne: 04 0022 1144</a>
+		</div>
+		
+		
+		<div align="center">
+			<label for="review">What Name would you like the Reservation under?</label>
+			<textarea name="undername" id="undername" placeholder="What Name would you like your Reservation Under?"></textarea>
+			<label for="numberpeople"> How Many People?</label>
+			<input type="range" value="5" min="0" max="10" name="numberpeople" id="numberpeople"/>
+			<label for="time"> What Time?</label>
+			<input type="range" value="6" min="6" max="12" name="time" id="time"/>
+			
+			
+			<!-- this is a continuation of Enhanced Feature, by using the same type of code
+			i am able to make by  Reservation show the input data in a pop window when the
+			user is finished-->
+			<!--Make a Reservation-->
+			<a  id="button2" href="#finish" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Submit Reservation</a>
+			<div>
+			<script type='text/javascript'>
+			
+							
+				<!--This code will get the information entered by the User and-->
+				<!--display it when the have finished-->
+				var text2 = "hello";
+				
+				$("#button2").click(function(){
+				var Rname = $('textarea#undername').val();
+				var Rpeople = $('input#numberpeople').val();
+				var Rtime = $('input#time').val();
+				 $("#finish p").append('Reservation under the name ' + Rname + 
+				 ' for ' + Rpeople + ' people ' + ' at ' + Rtime + ':00pm' );
+				
+				});
+			
+			</script>
+			<div data-role="popup" id="finish">
+				
+				<p></p>
+			</div>
+			</div>
+			
+		</div>
+			
+		<!--<a href="#reservation" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Show</a>-->
+		<!--Make a Reservation
+		<div data-role="popup" id="reservation">
+			<p>testing my popup</p>
+		</div>-->
+		
+		
+		
+		
+			
+			
+			<!--Back Button-->
+		<div align="center">
+			<a href="#Home" class="ui-btn ui-btn-inline ui-corner-all">Back</a>
+		
+		</div>
+			
+	</body>
+</html>
+
+<!--<li><a href="Ass1 Menu.html">New page</a></li> External Page-->
